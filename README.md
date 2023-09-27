@@ -1,7 +1,7 @@
 # EarthquakeBotV3
 CIS 25 Group Final
 
-```
+```bash
 GeoJSON Handler ==> Check for new entries ==> check if any new entries are within distance ==> send discord message
                 ==> check if any entries have been updated ==> update discord message
 

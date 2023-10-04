@@ -17,5 +17,4 @@ Discord Guild added ==> handle that somehow
 
 Resources:
 https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
-https://dpp.dev/
 https://stackoverflow.com/questions/27126714/c-latitude-and-longitude-distance-calculator

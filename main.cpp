@@ -109,7 +109,7 @@ int main() {
                         }
                     }
 
-                    //this needs to be fixed (check if this creates blank swarm)
+                    //this needs to be fixed (this creates blank swarm) replace with filter before statistics
                     if (swarm[n].size() == 1) {
                         //delete first earthquake in list as its not within searchDistance of another earthquake
                         earthquakes[n][0].clear();

@@ -79,72 +79,60 @@ int main() {
                 int n = 0;
                 while (true) {
                     int recalculations = 0;
-                    cout << "Swarm " << n << endl;
                     // if earthquakes[n] is empty, exit loop and print statistics
                     if (earthquakes[n].empty()) {
-                        cout << "   Exiting on iteration " << n << endl;
                         break;
-                }
-
-                double avgLocation[2];
-                avgLocation[0] = earthquakes[n][0]["geometry"]["coordinates"][0].get<double>();
-                avgLocation[1] = earthquakes[n][0]["geometry"]["coordinates"][1].get<double>();
-
-                while (true) {
-                    // check distance to each earthquake in earthquakes[n]
-                    for (int i = 0; i < earthquakes[n].size(); i++) {
-                        double x = earthquakes[n][i]["geometry"]["coordinates"][0].get<double>();
-                        double y = earthquakes[n][i]["geometry"]["coordinates"][1].get<double>();
-
-                        double distance = haversineDistance(avgLocation[0], avgLocation[1], x, y);
-                        //debug
-                        //cout << "       earthquake " << i << " is " << distance << "km from average" << "\n";
-
-                        if (distance < searchDistance){
-                            cout << "           Adding earthquake " << i << " to swarm " << n << "\n";
-                            swarm[n].push_back(earthquakes[n][i]);
-
-                        } else {
-                            earthquakes[n+1].push_back(earthquakes[n][i]);
-                        }
                     }
+                    cout << "Swarm " << n << endl;
 
-                    //this needs to be fixed (this creates blank swarm) replace with filter before statistics
-                    if (swarm[n].size() == 1) {
-                        //delete first earthquake in list as its not within searchDistance of another earthquake
-                        earthquakes[n][0].clear();
+                    double avgLocation[2];
+                    avgLocation[0] = earthquakes[n][0]["geometry"]["coordinates"][0].get<double>();
+                    avgLocation[1] = earthquakes[n][0]["geometry"]["coordinates"][1].get<double>();
+
+                    while (true) {
+                        // check distance to each earthquake in earthquakes[n]
+                        for (int i = 0; i < earthquakes[n].size(); i++) {
+                            double x = earthquakes[n][i]["geometry"]["coordinates"][0].get<double>();
+                            double y = earthquakes[n][i]["geometry"]["coordinates"][1].get<double>();
+
+                            double distance = haversineDistance(avgLocation[0], avgLocation[1], x, y);
+                            //debug
+                            //cout << "       earthquake " << i << " is " << distance << "km from average" << "\n";
+
+                            if (distance < searchDistance){
+                                cout << "           Adding earthquake " << i << " to swarm " << n << "\n";
+                                swarm[n].push_back(earthquakes[n][i]);
+
+                            } else {
+                                earthquakes[n+1].push_back(earthquakes[n][i]);
+                            }
+                        }
+
+                        // Calculate average location of swarm[n]
+                        double newAvgLocation[2] = {0,0};
+                        for (int i = 0; i < swarm[n].size(); i++) {
+                            newAvgLocation[0] += swarm[n][i]["geometry"]["coordinates"][0].get<double>();
+                            newAvgLocation[1] += swarm[n][i]["geometry"]["coordinates"][1].get<double>();
+                        }
+
+                        newAvgLocation[0] = newAvgLocation[0] / swarm[n].size();
+                        newAvgLocation[1] = newAvgLocation[1] / swarm[n].size();
+
+                        if (newAvgLocation[0] == avgLocation[0] && newAvgLocation[1] == avgLocation[1]){
+                            cout << "   average did not change, exiting" << "\n";
+                            break;
+                        }
+                        recalculations++;
+                        cout << "   average changed, recalculating x" << recalculations << "\n";
+                        avgLocation[0] = newAvgLocation[0];
+                        avgLocation[1] = newAvgLocation[1];
 
                         //prepare for recalculation
                         swarm[n].clear();
                         earthquakes[n+1].clear();
-                        break;
                     }
-
-                    // Calculate average location of swarm[n]
-                    double newAvgLocation[2] = {0,0};
-                    for (int i = 0; i < swarm[n].size(); i++) {
-                        newAvgLocation[0] += swarm[n][i]["geometry"]["coordinates"][0].get<double>();
-                        newAvgLocation[1] += swarm[n][i]["geometry"]["coordinates"][1].get<double>();
-                    }
-
-                    newAvgLocation[0] = newAvgLocation[0] / swarm[n].size();
-                    newAvgLocation[1] = newAvgLocation[1] / swarm[n].size();
-
-                    if (newAvgLocation[0] == avgLocation[0] && newAvgLocation[1] == avgLocation[1]){
-                        cout << "   average did not change, exiting" << "\n";
-                        break;
-                    }
-                    recalculations++;
-                    cout << "   average changed, recalculating x" << recalculations << "\n";
-                    avgLocation[0] = newAvgLocation[0];
-                    avgLocation[1] = newAvgLocation[1];
-
-                    //prepare for recalculation
-                    swarm[n].clear();
-                    earthquakes[n+1].clear();
+                    n++;
                 }
-                n++;
-            }
 
             cout << "Found " << swarm.size() << " swarms, calculating statistics" << endl;
 

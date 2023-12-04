@@ -155,6 +155,9 @@ int main() {
                 mag /= swarm[n].size();
 
                 // calculate standard deviation
+                  //-CenterPoint
+                  //-Mag
+                  //-Deph
 
 
                 // print

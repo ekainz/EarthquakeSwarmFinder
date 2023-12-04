@@ -6,6 +6,7 @@
 double haversineDistance(double lat1, double lon1, double lat2, double lon2);
 
 const double searchDistance = 50; // kms
+const int minSwarmSize = 3;
 
 using json = nlohmann::json;
 using namespace std;
@@ -71,10 +72,6 @@ int main() {
                 }
                 cout << "Relevant Earthquakes: " << earthquakes[0].size() << endl;
 
-
-                //debug
-                //cout << earthquakes[0].dump(4) << endl;
-
                 json swarm;
                 int n = 0;
                 while (true) {
@@ -84,7 +81,6 @@ int main() {
                         break;
                     }
                     cout << "Swarm " << n << endl;
-
                     double avgLocation[2];
                     avgLocation[0] = earthquakes[n][0]["geometry"]["coordinates"][0].get<double>();
                     avgLocation[1] = earthquakes[n][0]["geometry"]["coordinates"][1].get<double>();
@@ -120,6 +116,11 @@ int main() {
 
                         if (newAvgLocation[0] == avgLocation[0] && newAvgLocation[1] == avgLocation[1]){
                             cout << "   average did not change, exiting" << "\n";
+                            json avgLocationObj = {
+                                {"latitude", newAvgLocation[0]},
+                                {"longitude", newAvgLocation[1]}
+                            };
+                            swarm[n].push_back(avgLocationObj);
                             break;
                         }
                         recalculations++;
@@ -135,6 +136,12 @@ int main() {
                 }
 
             cout << "Found " << swarm.size() << " swarms, calculating statistics" << endl;
+
+            cout << swarm.dump(4) << endl;
+
+            //filter out swarms under minSwarmSize
+
+
 
             // calculate statistics
             for (int n = 0; n < swarm.size(); n++) {

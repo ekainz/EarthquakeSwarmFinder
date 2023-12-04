@@ -78,7 +78,7 @@ int main() {
                 json swarm;
                 int n = 0;
                 while (true) {
-                    cout << "Search Interation " << n << endl;
+                    cout << "Swarm " << n << endl;
                     // if earthquakes[n] is empty, exit loop and print statistics
                     if (earthquakes[n].empty()) {
                         cout << "   Exiting on iteration " << n << endl;
@@ -86,8 +86,8 @@ int main() {
                 }
 
                 double avgLocation[2];
-                avgLocation[0] = earthquakes[n][1]["geometry"]["coordinates"][0].get<double>();
-                avgLocation[1] = earthquakes[n][1]["geometry"]["coordinates"][1].get<double>();
+                avgLocation[0] = earthquakes[n][0]["geometry"]["coordinates"][0].get<double>();
+                avgLocation[1] = earthquakes[n][0]["geometry"]["coordinates"][1].get<double>();
 
                 while (true) {
                     // check distance to each earthquake in earthquakes[n]
@@ -95,7 +95,11 @@ int main() {
                         double x = earthquakes[n][i]["geometry"]["coordinates"][0].get<double>();
                         double y = earthquakes[n][i]["geometry"]["coordinates"][1].get<double>();
 
-                        if (haversineDistance(avgLocation[0], avgLocation[1], x, y) > searchDistance){
+                        double distance = haversineDistance(avgLocation[0], avgLocation[1], x, y);
+                        cout << "       earthquake " << i << " is " << distance << "km from average" << "\n";
+
+                        if (distance < searchDistance){
+                            cout << "           Adding to swarm" << "\n";
                             swarm[n].push_back(earthquakes[n][i]);
 
                         } else {
@@ -103,9 +107,11 @@ int main() {
                         }
                     }
 
-                    if (swarm[n].empty()) {
+                    if (swarm[n].size() == 1) {
+                        //delete first earthquake in list as its not within searchDistance of another earthquake
                         earthquakes[n][1].clear();
 
+                        //prepare for recalculation
                         swarm[n].clear();
                         earthquakes[n+1].clear();
                         break;
@@ -122,11 +128,14 @@ int main() {
                     newAvgLocation[1] = newAvgLocation[1] / swarm[n].size();
 
                     if (newAvgLocation[0] == avgLocation[0] && newAvgLocation[1] == avgLocation[1]){
+                        cout << "   average did not change, exiting" << "\n";
                         break;
                     }
+                    cout << "   average changed, recalculating" << "\n";
                     avgLocation[0] = newAvgLocation[0];
                     avgLocation[1] = newAvgLocation[1];
 
+                    //prepare for recalculation
                     swarm[n].clear();
                     earthquakes[n+1].clear();
                 }
@@ -140,7 +149,6 @@ int main() {
                 double coords[3];
                 double mag;
 
-                cout << "Swarm " << n << " contains " << swarm[n].size() << " earthquakes"<< endl;
                 //summation
                 for (int i = 0; i < swarm[n].size(); i++) {
                     coords[0] += swarm[n][i]["geometry"]["coordinates"][0].get<double>();
@@ -155,15 +163,12 @@ int main() {
                 mag /= swarm[n].size();
 
                 // calculate standard deviation
-                  //-CenterPoint
-                  //-Mag
-                  //-Deph
 
 
                 // print
-                cout << "Swarm " << n << ": \n"
+                cout << "Swarm " << n << ": (" << swarm[n].size() << " earthquakes)\n"
                     << "    Location: \n"
-                    << "        Center: ("<< coords[0] << ", " << coords[1] << ")\n"
+                    << "        Center: ("<< coords[1] << ", " << coords[0] << ")\n"
                     // << "        Avg distance from center: " << avgDistance << "\n"
                     << "    Magnitude: \n"
                     << "        Avg: " << mag << "\n"

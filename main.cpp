@@ -49,66 +49,71 @@ int main() {
 
        if (res == CURLE_OK) {
            try {
-               // Parse the JSON data using nlohmann/json
-               json parsed = json::parse(response);
-               json earthquakes[0] = parsed["features"];
+                // Parse the JSON data using nlohmann/json
+                json parsed = json::parse(response);
+                json earthquakes;
 
-               n = 0;
-               while true {
-                   // if earthquakes[n] is empty, exit loop and print statistics
-                   if (earthquakes[n].empty()) {
-                       break;
-                }
-
-                // filter out earthquakes not within searchDistance of another earthquake
-                // optimisation would be to just run this once at start, then only check if the first earthquake on later interations
-                json earthquakesFiltered;
-                for (int i = 0; i < (earthquakes[n].size() - 1); i++) {
-                    for (int j = 0 + 1; j < earthquakes[n].size(); j++) {
+                // filter out earthquakes not within searchDistance of another earthquake;
+                for (int i = 0; i < (parsed.size() - 1); i++) {
+                    for (int j = 0 + 1; j < parsed.size(); j++) {
                         if (j == i) {
                             j++;
                         }
 
-                        double a = earthquakes[n][i]["geometry"]["coordinates"][0];
-                        double b = earthquakes[n][i]["geometry"]["coordinates"][1];
-                        double x = earthquakes[n][j]["geometry"]["coordinates"][0];
-                        double y = earthquakes[n][j]["geometry"]["coordinates"][1];
+                        double a = parsed["features"][i]["geometry"]["coordinates"][0];
+                        double b = parsed["features"][i]["geometry"]["coordinates"][1];
+                        double x = parsed["features"][j]["geometry"]["coordinates"][0];
+                        double y = parsed["features"][j]["geometry"]["coordinates"][1];
 
                         // check distance
                         if  (haversineDistance(a, b, x, y) < searchDistance) {
-                            earthquakesFiltered.push_back(earthquakes[n][i]);
+                            earthquakes[0].push_back(parsed["features"][i]);
                             break;
                        }
                     }
                 }
 
+                json swarm;
+               int n = 0;
+               while (true) {
+                   // if earthquakes[n] is empty, exit loop and print statistics
+                   if (earthquakes[n].empty()) {
+                       break;
+                }
+
 
                 double avgLocation[2];
-                avgLocation[0] = earthquakesFiltered[1]["geometry"]["coordinates"][0];
-                avgLocation[1] = earthquakesFiltered[1]["geometry"]["coordinates"][1];
+                avgLocation[0] = earthquakes[n][1]["geometry"]["coordinates"][0];
+                avgLocation[1] = earthquakes[n][1]["geometry"]["coordinates"][1];
 
-
-
-
-                while true {
-                    // check distance to each earthquake in earthquakesFiltered
-                    for (int i = 0; i < earthquakesFiltered.size(); i++) {
-                        double x = earthquakesFiltered[i]["geometry"]["coordinates"][0];
-                        double y = earthquakesFiltered[i]["geometry"]["coordinates"][1];
+                while (true) {
+                    // check distance to each earthquake in earthquakes[n]
+                    for (int i = 0; i < earthquakes[n].size(); i++) {
+                        double x = earthquakes[n][i]["geometry"]["coordinates"][0];
+                        double y = earthquakes[n][i]["geometry"]["coordinates"][1];
 
                         if (haversineDistance(avgLocation[0], avgLocation[1], x, y) > searchDistance){
-                            swarm[n].push_back(earthquakesFiltered[i])
+                            swarm[n].push_back(earthquakes[n][i]);
 
                         } else {
-                            earthquakes[n+1].push_back(earthquakesFiltered[i]);
+                            earthquakes[n+1].push_back(earthquakes[n][i]);
                         }
                     }
 
+                    if (swarm[n].empty()) {
+                        earthquakes[n][1].clear();
+
+                        swarm[n].clear();
+                        earthquakes[n+1].clear();
+                        break;
+                    }
+
+
                     // Calculate average location of swarm [n]
-                    double newAvgLocation[2] = 0;
+                    double newAvgLocation[2] = {0,0};
                     for (int i = 0; i < swarm[n].size(); i++) {
-                        newAvgLocation[0] = newAvgLocation[0] + swarm[i]["geometry"]["coordinates"][0];
-                        newAvgLocation[1] = newAvgLocation[1] + swarm[i]["geometry"]["coordinates"][1];
+                        newAvgLocation[0] = newAvgLocation[0] + swarm[i]["geometry"]["coordinates"][0].get<double>();
+                        newAvgLocation[1] = newAvgLocation[1] + swarm[i]["geometry"]["coordinates"][1].get<double>();
                     }
 
                     newAvgLocation[0] = newAvgLocation[0] / swarm[n].size();
@@ -117,8 +122,10 @@ int main() {
                     if (newAvgLocation[0] == avgLocation[0] && newAvgLocation[1] == avgLocation[1]){
                         break;
                     }
-                    avgLocation = newAvgLocation;
-                    quakes[n].clear();
+                    avgLocation[0] = newAvgLocation[0];
+                    avgLocation[1] = newAvgLocation[1];
+
+                    swarm[n].clear();
                     earthquakes[n+1].clear();
                 }
                 n++;
@@ -126,6 +133,34 @@ int main() {
 
 
             // print statistics here
+
+            for (int n = 0; n < swarm.size(); n++) {
+            double coords[3];
+            double mag;
+
+
+            for (int i = 0; i < swarm[n].size(); i++) {
+                coords[0] += swarm[n][i]["geometry"]["coordinates"][0];
+                coords[1] += swarm[n][i]["geometry"]["coordinates"][1];
+                coords[2] += swarm[n][i]["geometry"]["coordinates"][2];
+                mag +=  swarm[n][i]["properties"]["mag"];
+            }
+
+            coords[0] /= swarm[n].size();
+            coords[1] /= swarm[n].size();
+            coords[2] /= swarm[n].size();
+            mag /= swarm[n].size();
+            }
+
+            cout << "Swarm " << n << ": \n”
+                << "    Size: " << Size << \n”
+                << "    Location: \n"
+                << "        Center: ("<< coords[0] << ", " << coords[1] << ")\n”
+                << "        Avg distance from center: " << avgDistance << "\n”
+                << "    Magnitude: \n”
+                << "        Avg: " << mag << "\n”
+                << "    Depth: \n”
+                << "        Avg: " << coords[2] << "km\n”;
 
            } catch (const std::exception& e) {
                std::cerr << "JSON parsing error: " << e.what() << std::endl;

@@ -21,6 +21,7 @@ double haversineDistance(double lat1, double lon1, double lat2, double lon2) {
     double dLon = (lon2 - lon1)*(M_PI/180);
 
     lat1 = lat1*(M_PI/180);
+
     lat2 = lat2*(M_PI/180);
 
     // Apply formula
@@ -50,10 +51,10 @@ void filterEarthquakes(json& filtered, const json& raw){
             //debug
             //cout << "    against earthquake " << j << "\n";
 
-            double a = raw["features"][i]["geometry"]["coordinates"][0].get<double>();
-            double b = raw["features"][i]["geometry"]["coordinates"][1].get<double>();
-            double x = raw["features"][j]["geometry"]["coordinates"][0].get<double>();
-            double y = raw["features"][j]["geometry"]["coordinates"][1].get<double>();
+            double a = raw["features"][i]["geometry"]["coordinates"][1].get<double>();
+            double b = raw["features"][i]["geometry"]["coordinates"][0].get<double>();
+            double x = raw["features"][j]["geometry"]["coordinates"][1].get<double>();
+            double y = raw["features"][j]["geometry"]["coordinates"][0].get<double>();
 
             // check distance
             double distance = haversineDistance(a, b, x, y);
@@ -86,10 +87,10 @@ void findSwarms (json& swarms, json& earthquakes){
         while (true) {
             // check distance to each earthquake in earthquakes[n]
             for (int i = 0; i < earthquakes[n].size(); i++) {
-                double x = earthquakes[n][i]["geometry"]["coordinates"][0].get<double>();
-                double y = earthquakes[n][i]["geometry"]["coordinates"][1].get<double>();
+                double x = earthquakes[n][i]["geometry"]["coordinates"][1].get<double>();
+                double y = earthquakes[n][i]["geometry"]["coordinates"][0].get<double>();
 
-                double distance = haversineDistance(avgLocation[0], avgLocation[1], x, y);
+                double distance = haversineDistance(avgLocation[1], avgLocation[0], x, y);
                 //debug
                 //cout << "       earthquake " << i << " is " << distance << "km from average" << "\n";
 
@@ -114,14 +115,6 @@ void findSwarms (json& swarms, json& earthquakes){
 
             if (newAvgLocation[0] == avgLocation[0] && newAvgLocation[1] == avgLocation[1]){
                 cout << "   average did not change, exiting" << "\n";
-
-
-                //swarms[n]["statistics"] = json::array();
-
-                //store newAvgLocation to swarms[n]["statistics"]["coordinates"]
-                //swarms[n]["statistics"]["coordinates"][0] = newAvgLocation[0];
-                //swarms[n]["statistics"]["coordinates"][1] = newAvgLocation[1];
-
                 break;
             }
             recalculations++;
@@ -148,72 +141,72 @@ void cullSwarms(json& output, const json& input){
             cout << "   swarm " << n << " is size " << input[n].size() << ", culling\n";
         }
     }
-    cout << output.size() << " swarms remaining" << "\n\n";
+    cout << output.size() << " swarms remaining\n";
 }
 
-void calculateStatistics(json& swarms) {
+void printStatistics(const json& swarms) {
+    cout << setprecision(4);
     for (int n = 0; n < swarms.size(); n++) {
         int count = swarms[n].size();
-        // calculate average
-        double depthAvg;
-        double magAvg;
-        double distAvg;
 
-        int a = swarms[n]["statistics"]["coordinates"][0];
-        int b = swarms[n]["statistics"]["coordinates"][1];
+
+        // recalculate average location because saving to json threw errors
+        double a = 0.0;
+        double b = 0.0;
+
+        for (int i = 0; i < count; i++) {
+            a += swarms[n][i]["geometry"]["coordinates"][1].get<double>();
+            b += swarms[n][i]["geometry"]["coordinates"][0].get<double>();
+        }
+        a /= count;
+        b /= count;
+
+
+
+        // calculate averages
+        double depthAvg, magAvg, distAvg;
         //summation
         for (int i = 0; i < count; i++) {
             depthAvg += swarms[n][i]["geometry"]["coordinates"][2].get<double>();
             magAvg += swarms[n][i]["properties"]["mag"].get<double>();
 
-            int x = swarms[n][i]["geometry"]["coordinates"][0];
-            int y = swarms[n][i]["geometry"]["coordinates"][1];
+            double x = swarms[n][i]["geometry"]["coordinates"][1].get<double>();
+            double y = swarms[n][i]["geometry"]["coordinates"][0].get<double>();
             distAvg += haversineDistance(a, b, x, y);
         }
-        // convert summation into average
         depthAvg /= count;
         magAvg /= count;
         distAvg /= count;
 
-        // calculate standard deviation
-        double depthSD;
-        double magSD;
-        double distSD;
-        for (int i = 0; i < count; i++) {
-            depthSD += (swarms[n][i]["geometry"]["coordinates"][2].get<double>() - depthAvg);
-            magSD +=  (swarms[n][i]["properties"]["mag"].get<double>() - magAvg);
 
-            int x = swarms[n][i]["geometry"]["coordinates"][0];
-            int y = swarms[n][i]["geometry"]["coordinates"][1];
-            distSD += (haversineDistance(a, b, x, y) - distAvg);
+        // calculate standard deviations
+        double depthSD = 0.0;
+        double magSD = 0.0;
+        double distSD = 0.0;
+        for (int i = 0; i < count; i++) {
+            depthSD += pow(swarms[n][i]["geometry"]["coordinates"][2].get<double>() - depthAvg, 2);
+            magSD +=  pow(swarms[n][i]["properties"]["mag"].get<double>() - magAvg, 2);
+
+            double x = swarms[n][i]["geometry"]["coordinates"][1].get<double>();
+            double y = swarms[n][i]["geometry"]["coordinates"][0].get<double>();
+            distSD += pow(haversineDistance(a, b, x, y) - distAvg, 2);
         }
         depthSD = sqrt(depthSD / count);
         magSD = sqrt(magSD / count);
         distSD = sqrt(distSD / count);
 
-        //store to swarms[n]["statistics"]
-        json statistics;
-        statistics["depth"]["avg"] = depthAvg;
-        statistics["depth"]["standardDeviation"] = depthSD;
-        statistics["mag"]["avg"] = magAvg;
-        statistics["mag"]["standardDeviation"] = magSD;
-        statistics["dist"]["avg"] = distAvg;
-        statistics["dist"]["standardDeviation"] = distSD;
-
-        // check if "statistics" field exists, if not, create it
-        if (!swarms[n].contains("statistics")) {
-            swarms[n]["statistics"] = json::object();
-        }
-
-        // store statistics in swarms[n]["statistics"]
-        swarms[n]["statistics"] = statistics;
-    }
-}
-
-void printStatistics(json& swarms) {
-    for (int n = 0; n < swarms.size(); n++) {
-        cout << "\nSwarm " << n << ":\n"
-        << swarms[n]["statistics"].dump(4) << "\n";
+        cout << "\n==================================================\n"
+        << "Swarm " << n << ": (" << swarms[n].size() << " earthquakes)\n"
+        << "    Location: \n"
+        << "        Center: ("<< a << ", " << b << ")\n"
+        << "        Avg distance from center: " << distAvg << "km"
+        << "    Standard Deviation: " << distSD << "\n"
+        << "    Magnitude: \n"
+        << "        Avg: " << magAvg
+        << "    Standard Deviation: " << magSD << "\n"
+        << "    Depth: \n"
+        << "        Avg: " << depthAvg << "km"
+        << "    Standard Deviation: " << depthSD << "\n";
     }
 }
 
@@ -238,11 +231,10 @@ int main() {
         if (res == CURLE_OK) {
             try {
 
-
                 cout << "Finding Swarms\n";
                 // Parse the JSON data using nlohmann/json
                 json parsed = json::parse(response);
-                json earthquakes = json::array({json::array()});
+                json earthquakes;
 
                 filterEarthquakes(earthquakes[0], parsed);
 
@@ -252,27 +244,15 @@ int main() {
                 json output;
                 cullSwarms(output, swarms);
 
-                calculateStatistics(output);
-
                 printStatistics(output);
 
-            //     cout << "\nSwarm " << n << ": (" << swarms[n].size() << " earthquakes)\n"
-            //     << "    Location: \n"
-            //     << "        Center: ("<< coords[1] << ", " << coords[0] << ")\n"
-            //     // << "        Avg distance from center: " << avgDistance << "\n"
-            //     << "    Magnitude: \n"
-            //     << "        Avg: " << mag << "\n"
-            //     << "    Depth: \n"
-            //     << "        Avg: " << coords[2] << "km" << endl;
-            // }
-
-        } catch (const std::exception& e) {
-            std::cerr << "JSON parsing error: " << e.what() << "\n";
+            } catch (const std::exception& e) {
+                std::cerr << "JSON parsing error: " << e.what() << "\n";
+            }
+        } else {
+            std::cerr << "Failed to fetch data from the URL\n";
         }
-    } else {
-        std::cerr << "Failed to fetch data from the URL\n";
     }
-}
 
-return 0;
+    return 0;
 }

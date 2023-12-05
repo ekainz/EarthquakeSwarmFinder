@@ -6,7 +6,7 @@
 using json = nlohmann::json;
 using namespace std;
 
-const double searchDistance = 50; // kms
+const double searchDistance = 100; // kms
 const int minSwarmSize = 5;
 
 size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {
@@ -200,13 +200,13 @@ void printStatistics(const json& swarms) {
         << "    Location: \n"
         << "        Center: ("<< a << ", " << b << ")\n"
         << "        Avg distance from center: " << distAvg << "km"
-        << "    Standard Deviation: " << distSD << "\n"
+        << "    Standard Deviation: " << distSD << "km\n"
         << "    Magnitude: \n"
         << "        Avg: " << magAvg
         << "    Standard Deviation: " << magSD << "\n"
         << "    Depth: \n"
         << "        Avg: " << depthAvg << "km"
-        << "    Standard Deviation: " << depthSD << "\n";
+        << "    Standard Deviation: " << depthSD << "km\n";
     }
 }
 

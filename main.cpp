@@ -56,9 +56,10 @@ void filterEarthquakes(json& filtered, const json& raw){
             double y = raw["features"][j]["geometry"]["coordinates"][1].get<double>();
 
             // check distance
-            if  (haversineDistance(a, b, x, y) < searchDistance) {
+            double distance = haversineDistance(a, b, x, y);
+            if  (distance < searchDistance) {
                 //debug
-                cout << "       earthquake " << i << " is within searchDistance of earthquake " << j << "\n";
+                cout << fixed << setprecision(2) << "       earthquake " << i << " is " << distance << "km from earthquake " << j << "\n";
                 filtered.push_back(raw["features"][i]);
                 break;
             }
@@ -76,7 +77,7 @@ void findSwarms (json& swarms, json& earthquakes){
         if (earthquakes[n].empty()) {
             break;
         }
-        cout << "Swarm " << n << ":\n";
+        cout << "\nSwarm " << n << ":\n";
 
         double avgLocation[2];
         avgLocation[0] = earthquakes[n][0]["geometry"]["coordinates"][0].get<double>();
@@ -93,7 +94,7 @@ void findSwarms (json& swarms, json& earthquakes){
                 //cout << "       earthquake " << i << " is " << distance << "km from average" << "\n";
 
                 if (distance < searchDistance){
-                    cout << "           Adding earthquake " << i << " to swarm " << n << "\n";
+                    cout << "           Earthquake " << i << " is " << distance << "km from center of swarm " << n << "\n";
                     swarms[n].push_back(earthquakes[n][i]);
 
                 } else {
@@ -135,7 +136,7 @@ void findSwarms (json& swarms, json& earthquakes){
         n++;
     }
 
-    cout << "Found " << swarms.size() << " swarms, calculating statistics\n";
+    cout << "Found " << swarms.size() << " swarms\n\n";
 }
 
 void cullSwarms(json& output, const json& input){
@@ -147,7 +148,7 @@ void cullSwarms(json& output, const json& input){
             cout << "   swarm " << n << " is size " << input[n].size() << ", culling\n";
         }
     }
-    cout << output.size() << " swarms remaining" << "\n";
+    cout << output.size() << " swarms remaining" << "\n\n";
 }
 
 void calculateStatistics(json& swarms) {

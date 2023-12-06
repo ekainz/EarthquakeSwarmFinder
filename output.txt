@@ -1,0 +1,1031 @@
+Downloading Dataset
+Finding Swarms
+Total Earthquakes: 247
+       earthquake 0 is 0.50km from earthquake 6
+       earthquake 1 is 61.99km from earthquake 38
+       earthquake 2 is 4.81km from earthquake 3
+       earthquake 3 is 4.81km from earthquake 2
+       earthquake 4 is 70.22km from earthquake 2
+       earthquake 5 is 95.81km from earthquake 28
+       earthquake 6 is 0.50km from earthquake 0
+       earthquake 7 is 0.24km from earthquake 0
+       earthquake 8 is 72.91km from earthquake 32
+       earthquake 9 is 64.44km from earthquake 196
+       earthquake 10 is 62.57km from earthquake 12
+       earthquake 11 is 13.19km from earthquake 17
+       earthquake 12 is 79.74km from earthquake 0
+       earthquake 13 is 6.04km from earthquake 23
+       earthquake 14 is 58.15km from earthquake 2
+       earthquake 15 is 22.24km from earthquake 18
+       earthquake 16 is 27.25km from earthquake 30
+       earthquake 17 is 13.19km from earthquake 11
+       earthquake 18 is 22.24km from earthquake 15
+       earthquake 19 is 19.04km from earthquake 2
+       earthquake 20 is 35.19km from earthquake 24
+       earthquake 21 is 77.87km from earthquake 26
+       earthquake 22 is 55.24km from earthquake 170
+       earthquake 23 is 6.04km from earthquake 13
+       earthquake 24 is 35.19km from earthquake 20
+       earthquake 25 is 91.92km from earthquake 123
+       earthquake 26 is 77.87km from earthquake 21
+       earthquake 27 is 81.85km from earthquake 32
+       earthquake 28 is 95.81km from earthquake 5
+       earthquake 29 is 8.11km from earthquake 77
+       earthquake 30 is 27.25km from earthquake 16
+       earthquake 31 is 15.20km from earthquake 11
+       earthquake 32 is 72.91km from earthquake 8
+       earthquake 33 is 26.70km from earthquake 130
+       earthquake 34 is 96.76km from earthquake 5
+       earthquake 35 is 96.46km from earthquake 5
+       earthquake 36 is 12.19km from earthquake 15
+       earthquake 37 is 9.32km from earthquake 13
+       earthquake 38 is 61.99km from earthquake 1
+       earthquake 39 is 36.25km from earthquake 5
+       earthquake 40 is 9.31km from earthquake 13
+       earthquake 41 is 43.98km from earthquake 10
+       earthquake 42 is 42.42km from earthquake 32
+       earthquake 44 is 6.98km from earthquake 13
+       earthquake 45 is 66.14km from earthquake 54
+       earthquake 46 is 52.29km from earthquake 55
+       earthquake 47 is 7.71km from earthquake 13
+       earthquake 48 is 6.93km from earthquake 13
+       earthquake 49 is 5.58km from earthquake 210
+       earthquake 50 is 25.02km from earthquake 15
+       earthquake 51 is 3.10km from earthquake 13
+       earthquake 52 is 16.54km from earthquake 11
+       earthquake 53 is 54.91km from earthquake 2
+       earthquake 54 is 66.14km from earthquake 45
+       earthquake 55 is 52.29km from earthquake 46
+       earthquake 56 is 2.49km from earthquake 13
+       earthquake 57 is 74.61km from earthquake 76
+       earthquake 58 is 35.63km from earthquake 2
+       earthquake 59 is 33.74km from earthquake 15
+       earthquake 60 is 33.85km from earthquake 15
+       earthquake 61 is 7.88km from earthquake 11
+       earthquake 62 is 91.78km from earthquake 1
+       earthquake 63 is 20.88km from earthquake 15
+       earthquake 64 is 0.65km from earthquake 13
+       earthquake 65 is 20.43km from earthquake 15
+       earthquake 66 is 28.75km from earthquake 94
+       earthquake 67 is 0.64km from earthquake 69
+       earthquake 68 is 24.58km from earthquake 15
+       earthquake 69 is 0.64km from earthquake 67
+       earthquake 70 is 1.11km from earthquake 13
+       earthquake 72 is 47.46km from earthquake 20
+       earthquake 73 is 2.93km from earthquake 20
+       earthquake 74 is 5.26km from earthquake 13
+       earthquake 76 is 74.61km from earthquake 57
+       earthquake 77 is 8.11km from earthquake 29
+       earthquake 78 is 7.27km from earthquake 13
+       earthquake 79 is 70.53km from earthquake 8
+       earthquake 80 is 0.28km from earthquake 13
+       earthquake 81 is 53.97km from earthquake 8
+       earthquake 82 is 36.42km from earthquake 15
+       earthquake 83 is 8.86km from earthquake 87
+       earthquake 84 is 30.67km from earthquake 20
+       earthquake 87 is 8.86km from earthquake 83
+       earthquake 88 is 53.28km from earthquake 16
+       earthquake 89 is 8.86km from earthquake 21
+       earthquake 90 is 1.40km from earthquake 13
+       earthquake 91 is 8.71km from earthquake 83
+       earthquake 92 is 8.76km from earthquake 83
+       earthquake 93 is 8.61km from earthquake 83
+       earthquake 94 is 28.75km from earthquake 66
+       earthquake 95 is 8.68km from earthquake 83
+       earthquake 98 is 49.42km from earthquake 15
+       earthquake 99 is 20.17km from earthquake 20
+       earthquake 100 is 64.44km from earthquake 2
+       earthquake 101 is 6.65km from earthquake 13
+       earthquake 102 is 6.55km from earthquake 13
+       earthquake 103 is 91.50km from earthquake 0
+       earthquake 104 is 25.37km from earthquake 15
+       earthquake 105 is 25.04km from earthquake 0
+       earthquake 106 is 18.96km from earthquake 2
+       earthquake 108 is 0.40km from earthquake 67
+       earthquake 109 is 4.18km from earthquake 13
+       earthquake 110 is 35.82km from earthquake 11
+       earthquake 111 is 86.24km from earthquake 24
+       earthquake 112 is 93.20km from earthquake 16
+       earthquake 113 is 75.04km from earthquake 16
+       earthquake 114 is 7.57km from earthquake 13
+       earthquake 115 is 54.58km from earthquake 55
+       earthquake 116 is 9.88km from earthquake 11
+       earthquake 117 is 12.29km from earthquake 13
+       earthquake 119 is 32.73km from earthquake 2
+       earthquake 120 is 5.50km from earthquake 66
+       earthquake 121 is 69.88km from earthquake 16
+       earthquake 122 is 56.38km from earthquake 1
+       earthquake 123 is 91.92km from earthquake 25
+       earthquake 124 is 25.89km from earthquake 15
+       earthquake 125 is 40.76km from earthquake 2
+       earthquake 126 is 24.34km from earthquake 15
+       earthquake 127 is 27.50km from earthquake 11
+       earthquake 128 is 1.72km from earthquake 20
+       earthquake 129 is 73.94km from earthquake 1
+       earthquake 130 is 26.70km from earthquake 33
+       earthquake 131 is 9.82km from earthquake 15
+       earthquake 132 is 10.50km from earthquake 15
+       earthquake 133 is 75.27km from earthquake 2
+       earthquake 134 is 39.52km from earthquake 15
+       earthquake 135 is 0.57km from earthquake 67
+       earthquake 136 is 76.23km from earthquake 8
+       earthquake 137 is 61.59km from earthquake 2
+       earthquake 138 is 57.13km from earthquake 2
+       earthquake 139 is 6.32km from earthquake 13
+       earthquake 141 is 6.48km from earthquake 20
+       earthquake 142 is 34.19km from earthquake 15
+       earthquake 143 is 48.16km from earthquake 2
+       earthquake 144 is 96.21km from earthquake 5
+       earthquake 145 is 14.96km from earthquake 8
+       earthquake 146 is 61.83km from earthquake 76
+       earthquake 147 is 3.68km from earthquake 67
+       earthquake 148 is 95.58km from earthquake 5
+       earthquake 149 is 96.92km from earthquake 5
+       earthquake 150 is 37.70km from earthquake 15
+       earthquake 152 is 89.39km from earthquake 10
+       earthquake 156 is 90.62km from earthquake 10
+       earthquake 157 is 6.25km from earthquake 13
+       earthquake 158 is 7.88km from earthquake 13
+       earthquake 159 is 12.52km from earthquake 15
+       earthquake 160 is 4.57km from earthquake 189
+       earthquake 161 is 51.75km from earthquake 46
+       earthquake 162 is 8.22km from earthquake 11
+       earthquake 163 is 64.42km from earthquake 15
+       earthquake 164 is 82.47km from earthquake 2
+       earthquake 165 is 33.65km from earthquake 8
+       earthquake 166 is 79.99km from earthquake 115
+       earthquake 167 is 4.14km from earthquake 83
+       earthquake 168 is 41.58km from earthquake 2
+       earthquake 169 is 99.81km from earthquake 25
+       earthquake 170 is 78.32km from earthquake 13
+       earthquake 171 is 6.24km from earthquake 13
+       earthquake 172 is 89.51km from earthquake 1
+       earthquake 173 is 72.45km from earthquake 169
+       earthquake 176 is 23.37km from earthquake 21
+       earthquake 177 is 73.57km from earthquake 12
+       earthquake 178 is 10.65km from earthquake 15
+       earthquake 179 is 42.19km from earthquake 15
+       earthquake 180 is 44.23km from earthquake 11
+       earthquake 181 is 41.49km from earthquake 15
+       earthquake 182 is 3.86km from earthquake 67
+       earthquake 183 is 79.92km from earthquake 2
+       earthquake 184 is 36.87km from earthquake 15
+       earthquake 185 is 96.61km from earthquake 8
+       earthquake 186 is 57.83km from earthquake 2
+       earthquake 187 is 73.80km from earthquake 81
+       earthquake 188 is 72.15km from earthquake 1
+       earthquake 189 is 4.57km from earthquake 160
+       earthquake 190 is 72.92km from earthquake 4
+       earthquake 191 is 69.51km from earthquake 1
+       earthquake 192 is 8.68km from earthquake 10
+       earthquake 193 is 1.49km from earthquake 13
+       earthquake 194 is 2.57km from earthquake 20
+       earthquake 195 is 46.31km from earthquake 15
+       earthquake 196 is 64.44km from earthquake 9
+       earthquake 198 is 46.77km from earthquake 45
+       earthquake 199 is 89.98km from earthquake 1
+       earthquake 200 is 27.29km from earthquake 2
+       earthquake 201 is 1.84km from earthquake 67
+       earthquake 202 is 1.32km from earthquake 13
+       earthquake 203 is 90.39km from earthquake 1
+       earthquake 204 is 31.72km from earthquake 15
+       earthquake 205 is 36.57km from earthquake 15
+       earthquake 206 is 37.33km from earthquake 15
+       earthquake 207 is 1.04km from earthquake 20
+       earthquake 208 is 0.64km from earthquake 20
+       earthquake 209 is 97.54km from earthquake 8
+       earthquake 210 is 5.58km from earthquake 49
+       earthquake 211 is 17.01km from earthquake 2
+       earthquake 212 is 2.82km from earthquake 8
+       earthquake 213 is 85.66km from earthquake 10
+       earthquake 214 is 35.09km from earthquake 20
+       earthquake 215 is 44.86km from earthquake 28
+       earthquake 216 is 72.40km from earthquake 13
+       earthquake 217 is 7.65km from earthquake 13
+       earthquake 218 is 98.94km from earthquake 0
+       earthquake 219 is 0.42km from earthquake 13
+       earthquake 220 is 68.47km from earthquake 2
+       earthquake 222 is 83.32km from earthquake 20
+       earthquake 223 is 5.79km from earthquake 160
+       earthquake 224 is 77.14km from earthquake 54
+       earthquake 225 is 52.34km from earthquake 9
+       earthquake 226 is 27.90km from earthquake 9
+       earthquake 227 is 44.49km from earthquake 1
+       earthquake 228 is 2.51km from earthquake 13
+       earthquake 229 is 54.92km from earthquake 66
+       earthquake 230 is 98.34km from earthquake 1
+       earthquake 231 is 9.55km from earthquake 49
+       earthquake 232 is 72.90km from earthquake 9
+       earthquake 233 is 79.18km from earthquake 21
+       earthquake 234 is 36.00km from earthquake 15
+       earthquake 235 is 66.40km from earthquake 9
+       earthquake 236 is 35.12km from earthquake 15
+       earthquake 237 is 27.25km from earthquake 2
+       earthquake 238 is 19.26km from earthquake 2
+       earthquake 239 is 33.05km from earthquake 15
+       earthquake 240 is 34.36km from earthquake 15
+       earthquake 242 is 35.92km from earthquake 2
+       earthquake 244 is 41.68km from earthquake 0
+       earthquake 245 is 86.68km from earthquake 10
+       earthquake 246 is 36.32km from earthquake 15
+Relevant Earthquakes: 227
+
+Swarm 0:
+           Earthquake 0 is 0.00km from center of swarm 0
+           Earthquake 6 is 0.50km from center of swarm 0
+           Earthquake 7 is 0.24km from center of swarm 0
+           Earthquake 12 is 79.74km from center of swarm 0
+           Earthquake 96 is 91.50km from center of swarm 0
+           Earthquake 98 is 25.04km from center of swarm 0
+           Earthquake 201 is 98.94km from center of swarm 0
+           Earthquake 224 is 41.68km from center of swarm 0
+   average changed, recalculating x1
+           Earthquake 0 is 41.84km from center of swarm 0
+           Earthquake 6 is 42.00km from center of swarm 0
+           Earthquake 7 is 42.03km from center of swarm 0
+           Earthquake 10 is 98.97km from center of swarm 0
+           Earthquake 12 is 37.92km from center of swarm 0
+           Earthquake 96 is 49.97km from center of swarm 0
+           Earthquake 98 is 17.28km from center of swarm 0
+           Earthquake 141 is 95.17km from center of swarm 0
+           Earthquake 142 is 95.91km from center of swarm 0
+           Earthquake 161 is 77.86km from center of swarm 0
+           Earthquake 176 is 90.93km from center of swarm 0
+           Earthquake 196 is 90.71km from center of swarm 0
+           Earthquake 201 is 57.22km from center of swarm 0
+           Earthquake 212 is 99.62km from center of swarm 0
+           Earthquake 224 is 10.68km from center of swarm 0
+   average changed, recalculating x2
+           Earthquake 0 is 71.40km from center of swarm 0
+           Earthquake 6 is 71.62km from center of swarm 0
+           Earthquake 7 is 71.61km from center of swarm 0
+           Earthquake 10 is 68.55km from center of swarm 0
+           Earthquake 12 is 12.69km from center of swarm 0
+           Earthquake 41 is 77.66km from center of swarm 0
+           Earthquake 96 is 20.55km from center of swarm 0
+           Earthquake 98 is 47.71km from center of swarm 0
+           Earthquake 120 is 95.98km from center of swarm 0
+           Earthquake 141 is 79.14km from center of swarm 0
+           Earthquake 142 is 80.15km from center of swarm 0
+           Earthquake 161 is 82.03km from center of swarm 0
+           Earthquake 172 is 97.48km from center of swarm 0
+           Earthquake 176 is 60.67km from center of swarm 0
+           Earthquake 196 is 78.95km from center of swarm 0
+           Earthquake 201 is 28.47km from center of swarm 0
+           Earthquake 212 is 70.65km from center of swarm 0
+           Earthquake 224 is 36.74km from center of swarm 0
+           Earthquake 225 is 88.68km from center of swarm 0
+   average changed, recalculating x3
+           Earthquake 0 is 85.59km from center of swarm 0
+           Earthquake 6 is 85.85km from center of swarm 0
+           Earthquake 7 is 85.81km from center of swarm 0
+           Earthquake 10 is 54.54km from center of swarm 0
+           Earthquake 12 is 18.75km from center of swarm 0
+           Earthquake 41 is 70.74km from center of swarm 0
+           Earthquake 96 is 13.92km from center of swarm 0
+           Earthquake 98 is 62.74km from center of swarm 0
+           Earthquake 120 is 80.19km from center of swarm 0
+           Earthquake 141 is 69.97km from center of swarm 0
+           Earthquake 142 is 71.09km from center of swarm 0
+           Earthquake 161 is 92.28km from center of swarm 0
+           Earthquake 172 is 81.69km from center of swarm 0
+           Earthquake 175 is 92.05km from center of swarm 0
+           Earthquake 176 is 47.23km from center of swarm 0
+           Earthquake 196 is 81.85km from center of swarm 0
+           Earthquake 201 is 20.89km from center of swarm 0
+           Earthquake 212 is 54.90km from center of swarm 0
+           Earthquake 224 is 52.54km from center of swarm 0
+           Earthquake 225 is 77.47km from center of swarm 0
+   average changed, recalculating x4
+           Earthquake 0 is 90.02km from center of swarm 0
+           Earthquake 6 is 90.29km from center of swarm 0
+           Earthquake 7 is 90.25km from center of swarm 0
+           Earthquake 10 is 50.35km from center of swarm 0
+           Earthquake 12 is 22.02km from center of swarm 0
+           Earthquake 41 is 68.71km from center of swarm 0
+           Earthquake 96 is 14.29km from center of swarm 0
+           Earthquake 98 is 67.30km from center of swarm 0
+           Earthquake 120 is 75.65km from center of swarm 0
+           Earthquake 141 is 68.32km from center of swarm 0
+           Earthquake 142 is 69.47km from center of swarm 0
+           Earthquake 161 is 95.10km from center of swarm 0
+           Earthquake 172 is 77.17km from center of swarm 0
+           Earthquake 175 is 87.44km from center of swarm 0
+           Earthquake 176 is 43.26km from center of swarm 0
+           Earthquake 196 is 82.66km from center of swarm 0
+           Earthquake 201 is 19.92km from center of swarm 0
+           Earthquake 212 is 50.43km from center of swarm 0
+           Earthquake 224 is 57.13km from center of swarm 0
+           Earthquake 225 is 75.01km from center of swarm 0
+   average did not change, exiting
+
+Swarm 1:
+           Earthquake 0 is 0.00km from center of swarm 1
+           Earthquake 33 is 61.99km from center of swarm 1
+           Earthquake 55 is 91.78km from center of swarm 1
+           Earthquake 105 is 56.38km from center of swarm 1
+           Earthquake 147 is 89.51km from center of swarm 1
+           Earthquake 167 is 89.98km from center of swarm 1
+           Earthquake 171 is 90.39km from center of swarm 1
+           Earthquake 192 is 44.49km from center of swarm 1
+   average changed, recalculating x1
+           Earthquake 0 is 31.47km from center of swarm 1
+           Earthquake 33 is 88.41km from center of swarm 1
+           Earthquake 55 is 64.37km from center of swarm 1
+           Earthquake 105 is 83.12km from center of swarm 1
+           Earthquake 147 is 60.47km from center of swarm 1
+           Earthquake 167 is 60.84km from center of swarm 1
+           Earthquake 171 is 61.30km from center of swarm 1
+           Earthquake 192 is 53.23km from center of swarm 1
+   average did not change, exiting
+
+Swarm 2:
+           Earthquake 0 is 0.00km from center of swarm 2
+           Earthquake 1 is 4.81km from center of swarm 2
+           Earthquake 2 is 70.22km from center of swarm 2
+           Earthquake 8 is 58.15km from center of swarm 2
+           Earthquake 13 is 19.04km from center of swarm 2
+           Earthquake 44 is 54.91km from center of swarm 2
+           Earthquake 49 is 35.63km from center of swarm 2
+           Earthquake 84 is 64.44km from center of swarm 2
+           Earthquake 88 is 18.96km from center of swarm 2
+           Earthquake 99 is 32.73km from center of swarm 2
+           Earthquake 104 is 40.76km from center of swarm 2
+           Earthquake 111 is 75.27km from center of swarm 2
+           Earthquake 115 is 61.59km from center of swarm 2
+           Earthquake 116 is 57.13km from center of swarm 2
+           Earthquake 120 is 48.16km from center of swarm 2
+           Earthquake 135 is 82.47km from center of swarm 2
+           Earthquake 139 is 41.58km from center of swarm 2
+           Earthquake 150 is 79.92km from center of swarm 2
+           Earthquake 153 is 57.83km from center of swarm 2
+           Earthquake 162 is 27.29km from center of swarm 2
+           Earthquake 172 is 17.01km from center of swarm 2
+           Earthquake 179 is 68.47km from center of swarm 2
+           Earthquake 193 is 27.25km from center of swarm 2
+           Earthquake 194 is 19.26km from center of swarm 2
+           Earthquake 197 is 35.92km from center of swarm 2
+   average changed, recalculating x1
+           Earthquake 0 is 29.64km from center of swarm 2
+           Earthquake 1 is 33.32km from center of swarm 2
+           Earthquake 2 is 50.54km from center of swarm 2
+           Earthquake 8 is 50.73km from center of swarm 2
+           Earthquake 13 is 21.57km from center of swarm 2
+           Earthquake 44 is 28.52km from center of swarm 2
+           Earthquake 49 is 30.03km from center of swarm 2
+           Earthquake 84 is 42.36km from center of swarm 2
+           Earthquake 88 is 34.27km from center of swarm 2
+           Earthquake 99 is 54.35km from center of swarm 2
+           Earthquake 104 is 36.29km from center of swarm 2
+           Earthquake 111 is 67.04km from center of swarm 2
+           Earthquake 115 is 45.35km from center of swarm 2
+           Earthquake 116 is 42.89km from center of swarm 2
+           Earthquake 120 is 36.86km from center of swarm 2
+           Earthquake 135 is 55.38km from center of swarm 2
+           Earthquake 139 is 40.61km from center of swarm 2
+           Earthquake 150 is 57.07km from center of swarm 2
+           Earthquake 153 is 41.43km from center of swarm 2
+           Earthquake 162 is 4.92km from center of swarm 2
+           Earthquake 172 is 13.55km from center of swarm 2
+           Earthquake 179 is 49.74km from center of swarm 2
+           Earthquake 193 is 3.18km from center of swarm 2
+           Earthquake 194 is 11.35km from center of swarm 2
+           Earthquake 197 is 29.67km from center of swarm 2
+   average did not change, exiting
+
+Swarm 3:
+           Earthquake 0 is 0.00km from center of swarm 3
+           Earthquake 17 is 95.81km from center of swarm 3
+           Earthquake 23 is 96.76km from center of swarm 3
+           Earthquake 24 is 96.46km from center of swarm 3
+           Earthquake 27 is 36.25km from center of swarm 3
+           Earthquake 106 is 96.21km from center of swarm 3
+           Earthquake 110 is 95.58km from center of swarm 3
+           Earthquake 111 is 96.92km from center of swarm 3
+   average changed, recalculating x1
+           Earthquake 0 is 72.30km from center of swarm 3
+           Earthquake 17 is 26.40km from center of swarm 3
+           Earthquake 23 is 24.91km from center of swarm 3
+           Earthquake 24 is 24.62km from center of swarm 3
+           Earthquake 27 is 78.75km from center of swarm 3
+           Earthquake 106 is 26.32km from center of swarm 3
+           Earthquake 110 is 23.28km from center of swarm 3
+           Earthquake 111 is 24.62km from center of swarm 3
+           Earthquake 154 is 59.51km from center of swarm 3
+   average changed, recalculating x2
+           Earthquake 0 is 74.13km from center of swarm 3
+           Earthquake 17 is 22.21km from center of swarm 3
+           Earthquake 23 is 22.77km from center of swarm 3
+           Earthquake 24 is 22.47km from center of swarm 3
+           Earthquake 27 is 83.23km from center of swarm 3
+           Earthquake 106 is 22.41km from center of swarm 3
+           Earthquake 110 is 22.82km from center of swarm 3
+           Earthquake 111 is 23.92km from center of swarm 3
+           Earthquake 154 is 52.89km from center of swarm 3
+   average did not change, exiting
+
+Swarm 4:
+           Earthquake 0 is 0.00km from center of swarm 4
+           Earthquake 19 is 72.91km from center of swarm 4
+           Earthquake 55 is 70.53km from center of swarm 4
+           Earthquake 57 is 53.97km from center of swarm 4
+           Earthquake 97 is 76.23km from center of swarm 4
+           Earthquake 101 is 14.96km from center of swarm 4
+           Earthquake 112 is 33.65km from center of swarm 4
+           Earthquake 126 is 96.61km from center of swarm 4
+           Earthquake 142 is 97.54km from center of swarm 4
+           Earthquake 144 is 2.82km from center of swarm 4
+   average changed, recalculating x1
+           Earthquake 0 is 23.93km from center of swarm 4
+           Earthquake 19 is 49.36km from center of swarm 4
+           Earthquake 24 is 77.87km from center of swarm 4
+           Earthquake 55 is 52.99km from center of swarm 4
+           Earthquake 57 is 55.20km from center of swarm 4
+           Earthquake 97 is 82.11km from center of swarm 4
+           Earthquake 101 is 24.83km from center of swarm 4
+           Earthquake 112 is 48.75km from center of swarm 4
+           Earthquake 126 is 77.64km from center of swarm 4
+           Earthquake 142 is 92.54km from center of swarm 4
+           Earthquake 144 is 21.14km from center of swarm 4
+   average changed, recalculating x2
+           Earthquake 0 is 30.81km from center of swarm 4
+           Earthquake 19 is 43.28km from center of swarm 4
+           Earthquake 24 is 70.77km from center of swarm 4
+           Earthquake 55 is 47.34km from center of swarm 4
+           Earthquake 57 is 59.24km from center of swarm 4
+           Earthquake 97 is 86.72km from center of swarm 4
+           Earthquake 101 is 31.61km from center of swarm 4
+           Earthquake 112 is 55.36km from center of swarm 4
+           Earthquake 126 is 71.36km from center of swarm 4
+           Earthquake 142 is 90.23km from center of swarm 4
+           Earthquake 144 is 27.99km from center of swarm 4
+   average did not change, exiting
+
+Swarm 5:
+           Earthquake 0 is 0.00km from center of swarm 5
+           Earthquake 124 is 64.44km from center of swarm 5
+           Earthquake 141 is 52.34km from center of swarm 5
+           Earthquake 142 is 27.90km from center of swarm 5
+           Earthquake 146 is 72.90km from center of swarm 5
+           Earthquake 149 is 66.40km from center of swarm 5
+   average changed, recalculating x1
+           Earthquake 0 is 31.60km from center of swarm 5
+           Earthquake 4 is 93.57km from center of swarm 5
+           Earthquake 57 is 98.90km from center of swarm 5
+           Earthquake 77 is 77.89km from center of swarm 5
+           Earthquake 124 is 63.04km from center of swarm 5
+           Earthquake 141 is 28.51km from center of swarm 5
+           Earthquake 142 is 34.77km from center of swarm 5
+           Earthquake 146 is 46.48km from center of swarm 5
+           Earthquake 149 is 46.74km from center of swarm 5
+   average changed, recalculating x2
+           Earthquake 0 is 51.03km from center of swarm 5
+           Earthquake 4 is 78.41km from center of swarm 5
+           Earthquake 16 is 98.60km from center of swarm 5
+           Earthquake 32 is 91.73km from center of swarm 5
+           Earthquake 57 is 77.92km from center of swarm 5
+           Earthquake 77 is 74.62km from center of swarm 5
+           Earthquake 124 is 59.74km from center of swarm 5
+           Earthquake 141 is 35.40km from center of swarm 5
+           Earthquake 142 is 55.27km from center of swarm 5
+           Earthquake 146 is 26.14km from center of swarm 5
+           Earthquake 149 is 53.31km from center of swarm 5
+   average changed, recalculating x3
+           Earthquake 0 is 59.57km from center of swarm 5
+           Earthquake 4 is 71.68km from center of swarm 5
+           Earthquake 16 is 93.34km from center of swarm 5
+           Earthquake 32 is 87.52km from center of swarm 5
+           Earthquake 57 is 68.56km from center of swarm 5
+           Earthquake 77 is 76.36km from center of swarm 5
+           Earthquake 124 is 59.33km from center of swarm 5
+           Earthquake 141 is 42.48km from center of swarm 5
+           Earthquake 142 is 64.62km from center of swarm 5
+           Earthquake 146 is 17.21km from center of swarm 5
+           Earthquake 149 is 59.45km from center of swarm 5
+   average did not change, exiting
+
+Swarm 6:
+           Earthquake 0 is 0.00km from center of swarm 6
+           Earthquake 3 is 13.19km from center of swarm 6
+           Earthquake 14 is 15.20km from center of swarm 6
+           Earthquake 27 is 16.54km from center of swarm 6
+           Earthquake 33 is 7.88km from center of swarm 6
+           Earthquake 67 is 35.82km from center of swarm 6
+           Earthquake 72 is 9.88km from center of swarm 6
+           Earthquake 79 is 27.50km from center of swarm 6
+           Earthquake 97 is 8.22km from center of swarm 6
+           Earthquake 108 is 44.23km from center of swarm 6
+   average changed, recalculating x1
+           Earthquake 0 is 5.60km from center of swarm 6
+           Earthquake 3 is 18.76km from center of swarm 6
+           Earthquake 14 is 13.67km from center of swarm 6
+           Earthquake 27 is 19.88km from center of swarm 6
+           Earthquake 33 is 10.53km from center of swarm 6
+           Earthquake 67 is 30.80km from center of swarm 6
+           Earthquake 72 is 13.51km from center of swarm 6
+           Earthquake 79 is 24.21km from center of swarm 6
+           Earthquake 97 is 5.33km from center of swarm 6
+           Earthquake 108 is 42.01km from center of swarm 6
+   average did not change, exiting
+
+Swarm 7:
+           Earthquake 0 is 0.00km from center of swarm 7
+           Earthquake 6 is 6.04km from center of swarm 7
+           Earthquake 14 is 9.32km from center of swarm 7
+           Earthquake 15 is 9.31km from center of swarm 7
+           Earthquake 16 is 6.98km from center of swarm 7
+           Earthquake 19 is 7.71km from center of swarm 7
+           Earthquake 20 is 6.93km from center of swarm 7
+           Earthquake 23 is 3.10km from center of swarm 7
+           Earthquake 25 is 2.49km from center of swarm 7
+           Earthquake 30 is 0.65km from center of swarm 7
+           Earthquake 36 is 1.11km from center of swarm 7
+           Earthquake 39 is 5.26km from center of swarm 7
+           Earthquake 42 is 7.27km from center of swarm 7
+           Earthquake 43 is 0.28km from center of swarm 7
+           Earthquake 49 is 1.40km from center of swarm 7
+           Earthquake 57 is 6.65km from center of swarm 7
+           Earthquake 58 is 6.55km from center of swarm 7
+           Earthquake 61 is 4.18km from center of swarm 7
+           Earthquake 65 is 7.57km from center of swarm 7
+           Earthquake 66 is 12.29km from center of swarm 7
+           Earthquake 78 is 6.32km from center of swarm 7
+           Earthquake 84 is 6.25km from center of swarm 7
+           Earthquake 85 is 7.88km from center of swarm 7
+           Earthquake 93 is 78.32km from center of swarm 7
+           Earthquake 94 is 6.24km from center of swarm 7
+           Earthquake 105 is 1.49km from center of swarm 7
+           Earthquake 110 is 1.32km from center of swarm 7
+           Earthquake 118 is 72.40km from center of swarm 7
+           Earthquake 119 is 7.65km from center of swarm 7
+           Earthquake 120 is 0.42km from center of swarm 7
+           Earthquake 124 is 2.51km from center of swarm 7
+   average changed, recalculating x1
+           Earthquake 0 is 9.04km from center of swarm 7
+           Earthquake 6 is 3.06km from center of swarm 7
+           Earthquake 14 is 3.71km from center of swarm 7
+           Earthquake 15 is 3.80km from center of swarm 7
+           Earthquake 16 is 2.93km from center of swarm 7
+           Earthquake 19 is 1.34km from center of swarm 7
+           Earthquake 20 is 7.56km from center of swarm 7
+           Earthquake 23 is 6.13km from center of swarm 7
+           Earthquake 25 is 6.74km from center of swarm 7
+           Earthquake 30 is 8.95km from center of swarm 7
+           Earthquake 36 is 9.90km from center of swarm 7
+           Earthquake 39 is 3.79km from center of swarm 7
+           Earthquake 42 is 1.93km from center of swarm 7
+           Earthquake 43 is 9.25km from center of swarm 7
+           Earthquake 49 is 7.64km from center of swarm 7
+           Earthquake 57 is 2.57km from center of swarm 7
+           Earthquake 58 is 2.65km from center of swarm 7
+           Earthquake 61 is 6.03km from center of swarm 7
+           Earthquake 65 is 1.69km from center of swarm 7
+           Earthquake 66 is 4.87km from center of swarm 7
+           Earthquake 78 is 3.73km from center of swarm 7
+           Earthquake 84 is 4.04km from center of swarm 7
+           Earthquake 85 is 4.53km from center of swarm 7
+           Earthquake 93 is 69.30km from center of swarm 7
+           Earthquake 94 is 3.41km from center of swarm 7
+           Earthquake 105 is 8.60km from center of swarm 7
+           Earthquake 110 is 9.95km from center of swarm 7
+           Earthquake 118 is 63.43km from center of swarm 7
+           Earthquake 119 is 1.53km from center of swarm 7
+           Earthquake 120 is 9.01km from center of swarm 7
+           Earthquake 124 is 6.62km from center of swarm 7
+   average did not change, exiting
+
+Swarm 8:
+           Earthquake 0 is 0.00km from center of swarm 8
+           Earthquake 1 is 22.24km from center of swarm 8
+           Earthquake 11 is 12.19km from center of swarm 8
+           Earthquake 15 is 25.02km from center of swarm 8
+           Earthquake 18 is 33.74km from center of swarm 8
+           Earthquake 19 is 33.85km from center of swarm 8
+           Earthquake 20 is 20.88km from center of swarm 8
+           Earthquake 21 is 20.43km from center of swarm 8
+           Earthquake 24 is 24.58km from center of swarm 8
+           Earthquake 30 is 36.42km from center of swarm 8
+           Earthquake 40 is 49.42km from center of swarm 8
+           Earthquake 42 is 25.37km from center of swarm 8
+           Earthquake 50 is 25.89km from center of swarm 8
+           Earthquake 51 is 24.34km from center of swarm 8
+           Earthquake 54 is 9.82km from center of swarm 8
+           Earthquake 55 is 10.50km from center of swarm 8
+           Earthquake 56 is 39.52km from center of swarm 8
+           Earthquake 59 is 34.19km from center of swarm 8
+           Earthquake 62 is 37.70km from center of swarm 8
+           Earthquake 63 is 12.52km from center of swarm 8
+           Earthquake 66 is 64.42km from center of swarm 8
+           Earthquake 72 is 10.65km from center of swarm 8
+           Earthquake 73 is 42.19km from center of swarm 8
+           Earthquake 74 is 41.49km from center of swarm 8
+           Earthquake 76 is 36.87km from center of swarm 8
+           Earthquake 81 is 46.31km from center of swarm 8
+           Earthquake 84 is 31.72km from center of swarm 8
+           Earthquake 85 is 36.57km from center of swarm 8
+           Earthquake 86 is 37.33km from center of swarm 8
+           Earthquake 97 is 36.00km from center of swarm 8
+           Earthquake 98 is 35.12km from center of swarm 8
+           Earthquake 99 is 33.05km from center of swarm 8
+           Earthquake 100 is 34.36km from center of swarm 8
+           Earthquake 101 is 36.32km from center of swarm 8
+   average changed, recalculating x1
+           Earthquake 0 is 23.07km from center of swarm 8
+           Earthquake 1 is 3.96km from center of swarm 8
+           Earthquake 11 is 28.70km from center of swarm 8
+           Earthquake 15 is 15.20km from center of swarm 8
+           Earthquake 18 is 11.99km from center of swarm 8
+           Earthquake 19 is 11.93km from center of swarm 8
+           Earthquake 20 is 8.10km from center of swarm 8
+           Earthquake 21 is 8.64km from center of swarm 8
+           Earthquake 24 is 14.62km from center of swarm 8
+           Earthquake 30 is 14.15km from center of swarm 8
+           Earthquake 40 is 31.77km from center of swarm 8
+           Earthquake 42 is 15.36km from center of swarm 8
+           Earthquake 50 is 17.29km from center of swarm 8
+           Earthquake 51 is 14.54km from center of swarm 8
+           Earthquake 54 is 24.93km from center of swarm 8
+           Earthquake 55 is 24.44km from center of swarm 8
+           Earthquake 56 is 17.15km from center of swarm 8
+           Earthquake 59 is 12.30km from center of swarm 8
+           Earthquake 62 is 15.80km from center of swarm 8
+           Earthquake 63 is 26.53km from center of swarm 8
+           Earthquake 66 is 86.99km from center of swarm 8
+           Earthquake 72 is 24.72km from center of swarm 8
+           Earthquake 73 is 20.07km from center of swarm 8
+           Earthquake 74 is 19.43km from center of swarm 8
+           Earthquake 76 is 14.52km from center of swarm 8
+           Earthquake 81 is 26.95km from center of swarm 8
+           Earthquake 84 is 9.43km from center of swarm 8
+           Earthquake 85 is 14.22km from center of swarm 8
+           Earthquake 86 is 15.05km from center of swarm 8
+           Earthquake 97 is 13.86km from center of swarm 8
+           Earthquake 98 is 13.05km from center of swarm 8
+           Earthquake 99 is 14.04km from center of swarm 8
+           Earthquake 100 is 14.88km from center of swarm 8
+           Earthquake 101 is 14.36km from center of swarm 8
+   average did not change, exiting
+
+Swarm 9:
+           Earthquake 0 is 0.00km from center of swarm 9
+           Earthquake 3 is 35.19km from center of swarm 9
+           Earthquake 17 is 47.46km from center of swarm 9
+           Earthquake 18 is 2.93km from center of swarm 9
+           Earthquake 22 is 30.67km from center of swarm 9
+           Earthquake 30 is 20.17km from center of swarm 9
+           Earthquake 38 is 1.72km from center of swarm 9
+           Earthquake 41 is 6.48km from center of swarm 9
+           Earthquake 55 is 2.57km from center of swarm 9
+           Earthquake 58 is 1.04km from center of swarm 9
+           Earthquake 59 is 0.64km from center of swarm 9
+           Earthquake 61 is 35.09km from center of swarm 9
+           Earthquake 62 is 83.32km from center of swarm 9
+   average changed, recalculating x1
+           Earthquake 0 is 16.27km from center of swarm 9
+           Earthquake 3 is 23.40km from center of swarm 9
+           Earthquake 17 is 34.82km from center of swarm 9
+           Earthquake 18 is 17.83km from center of swarm 9
+           Earthquake 22 is 15.42km from center of swarm 9
+           Earthquake 30 is 7.24km from center of swarm 9
+           Earthquake 38 is 17.18km from center of swarm 9
+           Earthquake 41 is 12.08km from center of swarm 9
+           Earthquake 55 is 14.98km from center of swarm 9
+           Earthquake 58 is 16.94km from center of swarm 9
+           Earthquake 59 is 15.72km from center of swarm 9
+           Earthquake 61 is 25.01km from center of swarm 9
+           Earthquake 62 is 71.96km from center of swarm 9
+   average did not change, exiting
+
+Swarm 10:
+           Earthquake 0 is 0.00km from center of swarm 10
+           Earthquake 3 is 77.87km from center of swarm 10
+           Earthquake 19 is 8.86km from center of swarm 10
+           Earthquake 42 is 23.37km from center of swarm 10
+           Earthquake 54 is 79.18km from center of swarm 10
+   average changed, recalculating x1
+           Earthquake 0 is 27.02km from center of swarm 10
+           Earthquake 3 is 65.26km from center of swarm 10
+           Earthquake 19 is 27.47km from center of swarm 10
+           Earthquake 42 is 10.88km from center of swarm 10
+           Earthquake 54 is 58.66km from center of swarm 10
+   average did not change, exiting
+
+Swarm 11:
+           Earthquake 0 is 0.00km from center of swarm 11
+   average did not change, exiting
+
+Swarm 12:
+           Earthquake 0 is 0.00km from center of swarm 12
+           Earthquake 27 is 91.92km from center of swarm 12
+           Earthquake 36 is 99.81km from center of swarm 12
+   average changed, recalculating x1
+           Earthquake 0 is 56.42km from center of swarm 12
+           Earthquake 27 is 50.83km from center of swarm 12
+           Earthquake 36 is 55.44km from center of swarm 12
+   average did not change, exiting
+
+Swarm 13:
+           Earthquake 0 is 0.00km from center of swarm 13
+   average did not change, exiting
+
+Swarm 14:
+           Earthquake 0 is 0.00km from center of swarm 14
+           Earthquake 11 is 8.11km from center of swarm 14
+   average changed, recalculating x1
+           Earthquake 0 is 4.05km from center of swarm 14
+           Earthquake 11 is 4.05km from center of swarm 14
+   average did not change, exiting
+
+Swarm 15:
+           Earthquake 0 is 0.00km from center of swarm 15
+           Earthquake 23 is 26.70km from center of swarm 15
+   average changed, recalculating x1
+           Earthquake 0 is 13.36km from center of swarm 15
+           Earthquake 23 is 13.34km from center of swarm 15
+   average did not change, exiting
+
+Swarm 16:
+           Earthquake 0 is 0.00km from center of swarm 16
+           Earthquake 3 is 66.14km from center of swarm 16
+           Earthquake 34 is 46.77km from center of swarm 16
+   average changed, recalculating x1
+           Earthquake 0 is 13.01km from center of swarm 16
+           Earthquake 3 is 57.52km from center of swarm 16
+           Earthquake 34 is 50.88km from center of swarm 16
+           Earthquake 38 is 98.33km from center of swarm 16
+   average changed, recalculating x2
+           Earthquake 0 is 37.58km from center of swarm 16
+           Earthquake 3 is 46.59km from center of swarm 16
+           Earthquake 34 is 65.72km from center of swarm 16
+           Earthquake 38 is 73.76km from center of swarm 16
+   average did not change, exiting
+
+Swarm 17:
+           Earthquake 0 is 0.00km from center of swarm 17
+           Earthquake 24 is 51.75km from center of swarm 17
+   average changed, recalculating x1
+           Earthquake 0 is 25.90km from center of swarm 17
+           Earthquake 24 is 25.84km from center of swarm 17
+   average did not change, exiting
+
+Swarm 18:
+           Earthquake 0 is 0.00km from center of swarm 18
+           Earthquake 31 is 5.58km from center of swarm 18
+           Earthquake 34 is 9.55km from center of swarm 18
+   average changed, recalculating x1
+           Earthquake 0 is 5.03km from center of swarm 18
+           Earthquake 31 is 0.76km from center of swarm 18
+           Earthquake 34 is 4.54km from center of swarm 18
+   average did not change, exiting
+
+Swarm 19:
+           Earthquake 0 is 0.00km from center of swarm 19
+           Earthquake 4 is 74.61km from center of swarm 19
+   average changed, recalculating x1
+           Earthquake 0 is 37.25km from center of swarm 19
+           Earthquake 4 is 37.37km from center of swarm 19
+           Earthquake 19 is 77.49km from center of swarm 19
+   average changed, recalculating x2
+           Earthquake 0 is 57.03km from center of swarm 19
+           Earthquake 4 is 29.65km from center of swarm 19
+           Earthquake 19 is 51.69km from center of swarm 19
+   average did not change, exiting
+
+Swarm 20:
+           Earthquake 0 is 0.00km from center of swarm 20
+           Earthquake 8 is 28.75km from center of swarm 20
+           Earthquake 14 is 5.50km from center of swarm 20
+           Earthquake 28 is 54.92km from center of swarm 20
+   average changed, recalculating x1
+           Earthquake 0 is 21.33km from center of swarm 20
+           Earthquake 8 is 12.77km from center of swarm 20
+           Earthquake 14 is 16.54km from center of swarm 20
+           Earthquake 28 is 34.09km from center of swarm 20
+   average did not change, exiting
+
+Swarm 21:
+           Earthquake 0 is 0.00km from center of swarm 21
+           Earthquake 1 is 0.64km from center of swarm 21
+           Earthquake 8 is 0.40km from center of swarm 21
+           Earthquake 13 is 0.57km from center of swarm 21
+           Earthquake 14 is 3.68km from center of swarm 21
+           Earthquake 19 is 3.86km from center of swarm 21
+           Earthquake 23 is 1.84km from center of swarm 21
+   average changed, recalculating x1
+           Earthquake 0 is 0.61km from center of swarm 21
+           Earthquake 1 is 1.18km from center of swarm 21
+           Earthquake 8 is 0.95km from center of swarm 21
+           Earthquake 13 is 1.03km from center of swarm 21
+           Earthquake 14 is 3.11km from center of swarm 21
+           Earthquake 19 is 3.40km from center of swarm 21
+           Earthquake 23 is 2.28km from center of swarm 21
+   average did not change, exiting
+
+Swarm 22:
+           Earthquake 0 is 0.00km from center of swarm 22
+           Earthquake 1 is 8.86km from center of swarm 22
+           Earthquake 2 is 8.71km from center of swarm 22
+           Earthquake 3 is 8.76km from center of swarm 22
+           Earthquake 4 is 8.61km from center of swarm 22
+           Earthquake 5 is 8.68km from center of swarm 22
+           Earthquake 12 is 4.14km from center of swarm 22
+   average changed, recalculating x1
+           Earthquake 0 is 5.93km from center of swarm 22
+           Earthquake 1 is 2.94km from center of swarm 22
+           Earthquake 2 is 2.82km from center of swarm 22
+           Earthquake 3 is 2.85km from center of swarm 22
+           Earthquake 4 is 2.78km from center of swarm 22
+           Earthquake 5 is 3.23km from center of swarm 22
+           Earthquake 12 is 8.57km from center of swarm 22
+   average did not change, exiting
+
+Swarm 23:
+           Earthquake 0 is 0.00km from center of swarm 23
+   average did not change, exiting
+
+Swarm 24:
+           Earthquake 0 is 0.00km from center of swarm 24
+           Earthquake 1 is 87.87km from center of swarm 24
+           Earthquake 2 is 24.75km from center of swarm 24
+   average changed, recalculating x1
+           Earthquake 0 is 36.50km from center of swarm 24
+           Earthquake 1 is 51.79km from center of swarm 24
+           Earthquake 2 is 17.68km from center of swarm 24
+   average did not change, exiting
+
+Swarm 25:
+           Earthquake 0 is 0.00km from center of swarm 25
+           Earthquake 4 is 4.57km from center of swarm 25
+           Earthquake 6 is 5.79km from center of swarm 25
+   average changed, recalculating x1
+           Earthquake 0 is 3.45km from center of swarm 25
+           Earthquake 4 is 1.12km from center of swarm 25
+           Earthquake 6 is 2.34km from center of swarm 25
+   average did not change, exiting
+
+Swarm 26:
+           Earthquake 0 is 0.00km from center of swarm 26
+   average did not change, exiting
+
+Swarm 27:
+           Earthquake 0 is 0.00km from center of swarm 27
+   average did not change, exiting
+
+Swarm 28:
+           Earthquake 0 is 0.00km from center of swarm 28
+   average did not change, exiting
+
+Swarm 29:
+           Earthquake 0 is 0.00km from center of swarm 29
+   average did not change, exiting
+Found 30 swarms
+
+Culling swarms smaller than size 5
+   swarm 11 is size 1, culling
+   swarm 12 is size 3, culling
+   swarm 13 is size 1, culling
+   swarm 14 is size 2, culling
+   swarm 15 is size 2, culling
+   swarm 16 is size 4, culling
+   swarm 17 is size 2, culling
+   swarm 18 is size 3, culling
+   swarm 19 is size 3, culling
+   swarm 20 is size 4, culling
+   swarm 23 is size 1, culling
+   swarm 24 is size 3, culling
+   swarm 25 is size 3, culling
+   swarm 26 is size 1, culling
+   swarm 27 is size 1, culling
+   swarm 28 is size 1, culling
+   swarm 29 is size 1, culling
+13 swarms remaining
+
+==================================================
+Swarm 0: (20 earthquakes)
+    Location: 
+        Center: (33.1290, -116.2694)
+        Avg distance from center: 64.7402km    Standard Deviation: 23.9239km
+    Magnitude: 
+        Avg: 1.4245    Standard Deviation: 0.6146
+    Depth: 
+        Avg: 8.9530km    Standard Deviation: 5.6323km
+
+==================================================
+Swarm 1: (8 earthquakes)
+    Location: 
+        Center: (34.0796, -117.2891)
+        Avg distance from center: 70.9929km    Standard Deviation: 18.3007km
+    Magnitude: 
+        Avg: 1.8431    Standard Deviation: 0.8124
+    Depth: 
+        Avg: 9.4504km    Standard Deviation: 3.6673km
+
+==================================================
+Swarm 2: (25 earthquakes)
+    Location: 
+        Center: (8.7513, 126.8010)
+        Avg distance from center: 39.2654km    Standard Deviation: 16.3784km
+    Magnitude: 
+        Avg: 4.9377    Standard Deviation: 0.3673
+    Depth: 
+        Avg: 57.1133km    Standard Deviation: 13.5398km
+
+==================================================
+Swarm 3: (9 earthquakes)
+    Location: 
+        Center: (35.6456, -117.7947)
+        Avg distance from center: 42.9026km    Standard Deviation: 23.8887km
+    Magnitude: 
+        Avg: 1.6053    Standard Deviation: 0.6431
+    Depth: 
+        Avg: 10.7437km    Standard Deviation: 6.8595km
+
+==================================================
+Swarm 4: (11 earthquakes)
+    Location: 
+        Center: (60.3709, -152.0635)
+        Avg distance from center: 59.7835km    Standard Deviation: 21.3170km
+    Magnitude: 
+        Avg: 2.2641    Standard Deviation: 0.2781
+    Depth: 
+        Avg: 78.3040km    Standard Deviation: 24.0393km
+
+==================================================
+Swarm 5: (11 earthquakes)
+    Location: 
+        Center: (62.3595, -149.8831)
+        Avg distance from center: 69.0836km    Standard Deviation: 20.6379km
+    Magnitude: 
+        Avg: 2.2786    Standard Deviation: 0.6155
+    Depth: 
+        Avg: 55.4913km    Standard Deviation: 24.7030km
+
+==================================================
+Swarm 6: (10 earthquakes)
+    Location: 
+        Center: (12.2489, 47.4109)
+        Avg distance from center: 25.3392km    Standard Deviation: 12.9143km
+    Magnitude: 
+        Avg: 5.0279    Standard Deviation: 0.4494
+    Depth: 
+        Avg: 15.5491km    Standard Deviation: 5.5491km
+
+==================================================
+Swarm 7: (31 earthquakes)
+    Location: 
+        Center: (38.8458, -122.8219)
+        Avg distance from center: 10.0981km    Standard Deviation: 15.2666km
+    Magnitude: 
+        Avg: 1.1067    Standard Deviation: 0.4140
+    Depth: 
+        Avg: 2.7206km    Standard Deviation: 1.7072km
+
+==================================================
+Swarm 8: (34 earthquakes)
+    Location: 
+        Center: (31.6497, -104.2335)
+        Avg distance from center: 19.1807km    Standard Deviation: 13.3900km
+    Magnitude: 
+        Avg: 1.9943    Standard Deviation: 0.4072
+    Depth: 
+        Avg: 5.5435km    Standard Deviation: 1.1968km
+
+==================================================
+Swarm 9: (13 earthquakes)
+    Location: 
+        Center: (19.3476, -155.3534)
+        Avg distance from center: 23.6937km    Standard Deviation: 15.8017km
+    Magnitude: 
+        Avg: 2.3819    Standard Deviation: 0.9233
+    Depth: 
+        Avg: 8.2418km    Standard Deviation: 11.1616km
+
+==================================================
+Swarm 10: (5 earthquakes)
+    Location: 
+        Center: (18.0961, -66.8010)
+        Avg distance from center: 42.5940km    Standard Deviation: 21.2084km
+    Magnitude: 
+        Avg: 2.9484    Standard Deviation: 0.5353
+    Depth: 
+        Avg: 16.0684km    Standard Deviation: 4.2341km
+
+==================================================
+Swarm 11: (7 earthquakes)
+    Location: 
+        Center: (35.1143, -97.5511)
+        Avg distance from center: 7.8784km    Standard Deviation: 6.1736km
+    Magnitude: 
+        Avg: 1.4383    Standard Deviation: 0.5561
+    Depth: 
+        Avg: 7.6698km    Standard Deviation: 3.2326km
+
+==================================================
+Swarm 12: (7 earthquakes)
+    Location: 
+        Center: (44.7681, -110.8926)
+        Avg distance from center: 5.2860km    Standard Deviation: 2.3671km
+    Magnitude: 
+        Avg: 0.4812    Standard Deviation: 0.4171
+    Depth: 
+        Avg: 8.6971km    Standard Deviation: 2.6191km

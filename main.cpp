@@ -118,7 +118,7 @@ void findSwarms (json& swarms, json& earthquakes){
                 break;
             }
             recalculations++;
-            cout << "   average changed, recalculating x" << recalculations << "\n";
+            cout << "   average changed changed to (" << setprecision(4) << newAvgLocation[1] << ", " << newAvgLocation[0] << "), recalculating x" << recalculations << "\n";
             avgLocation[0] = newAvgLocation[0];
             avgLocation[1] = newAvgLocation[1];
 

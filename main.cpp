@@ -164,7 +164,9 @@ void printStatistics(const json& swarms) {
 
 
         // calculate averages
-        double depthAvg, magAvg, distAvg;
+        double depthAvg = 0.0;
+        double magAvg = 0.0;
+        double distAvg = 0.0;
         //summation
         for (int i = 0; i < count; i++) {
             depthAvg += swarms[n][i]["geometry"]["coordinates"][2].get<double>();
